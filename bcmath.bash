@@ -12,12 +12,12 @@
 # ⟬     bcmath "3 * (2 + 3)" = 15                    ⟭
 # ⟬ @PARAM    	@DESCRIPTION                         ⟭
 # ⟬ -h,--help	This help message                    ⟭
-# ⟬ -s[n]		Decimal scale length                 ⟭
+# ⟬ -s[n]		Decimal scale length         ⟭
 # ⟬                                                  ⟭
 # ⟬ @ERRORLEVEL: 1,2,3                               ⟭
-# ⟬ 1		bc was not found	                     ⟭
-# ⟬ 2		Incorrect scale length 	                 ⟭
-# ⟬ 3		Incorrect mathematical operation         ⟭
+# ⟬ 1		bc was not found	             ⟭
+# ⟬ 2		Incorrect scale length 	             ⟭
+# ⟬ 3		Incorrect mathematical operation     ⟭
 # ⟬⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟭
 function bcmath(){
 	which bc > /dev/null || return 1
