@@ -30,7 +30,7 @@ bcmath -s4 "25/3" # 8.3333
 
 ## Installation
 
-The function is provided in both the script [.sh] file and the function file [.bash].
+The function is provided in both the script [bcmath.sh](bcmath.sh) file and the function file [bcmath.bash](bcmath.bash).
 
 The script file should be placed where your other scripts are; preferably somewhere in $PATH.
 
@@ -61,3 +61,22 @@ Basic wrapper for the math cli 'bc'
   - 1 bc was not found
   - 2 Incorrect scale length
   - 3 Incorrect mathematical operation
+
+## License GPLV3
+
+This license file: [LICENSE](LICENSE "GPLV3 License File")
+
+```LICENSE
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    License provided in LICENSE file
+
+```
