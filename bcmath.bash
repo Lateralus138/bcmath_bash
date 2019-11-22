@@ -3,21 +3,22 @@
 # Use uncommented next line to add bash completion
 # complete -W "-h --help -s 0 1 2 3 4 5 6 7 8 9 + - * / ( )" bcmath
 
-# ⟬⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟭
+# ⟬⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟭
 # ⟬ Basic wrapper for the math cli 'bc'              ⟭
-# ⟬ @USAGE: bcmath <PARAMS> operation                ⟭
+# ⟬ @USAGE: bcmath <PARAM> operation                 ⟭
+# ⟬ 	bcmath -s4 "25/3" = 8.3333                   ⟭
 # ⟬ 	bcmath "3*(2+3)" = 15                        ⟭
 # ⟬     bcmath 3\*\(2+3\) = 15                       ⟭
 # ⟬     bcmath "3 * (2 + 3)" = 15                    ⟭
-# ⟬ @PARAMS     @DESCRIPTION                         ⟭
+# ⟬ @PARAM    	@DESCRIPTION                         ⟭
 # ⟬ -h,--help	This help message                    ⟭
-# ⟬ -s[n]	Decimal scale length                 ⟭
+# ⟬ -s[n]		Decimal scale length                 ⟭
 # ⟬                                                  ⟭
 # ⟬ @ERRORLEVEL: 1,2,3                               ⟭
-# ⟬ 1		bc was not found	             ⟭
-# ⟬ 2		Incorrect scale length 	             ⟭
-# ⟬ 3		Incorrect mathematical operation     ⟭
-# ⟬⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟭
+# ⟬ 1		bc was not found	                     ⟭
+# ⟬ 2		Incorrect scale length 	                 ⟭
+# ⟬ 3		Incorrect mathematical operation         ⟭
+# ⟬⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟭
 function bcmath(){
 	which bc > /dev/null || return 1
 	local item char scale params="$*" array=("$@") 
@@ -27,11 +28,11 @@ function bcmath(){
 
 	Basic wrapper for the math cli 'bc'
 
- 	@USAGE:	bcmath operation
-		bcmath <PARAM>
+ 	@USAGE:	bcmath <PARAM> operation
+	 	bcmath -s4 "25/3" = 8.3333
  		bcmath "3*(2+3)" = 15
-    		bcmath 3\*\(2+3\) = 15
-    		bcmath "3 * (2 + 3)" = 15
+		bcmath 3\*\(2+3\) = 15
+		bcmath "3 * (2 + 3)" = 15
 
 	@PARAM		@DESCRIPTION		
 	-h,--help	This help message
